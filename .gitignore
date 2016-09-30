@@ -2,10 +2,8 @@
 settings*.php
 
 # Ignore paths that contain user-generated content.
-files-files
+files
 private
-events
-proects
 tmp
 ._*
 .DS_Store
