@@ -1,4 +1,4 @@
-/*/ DebugMe (bug tracker plugin while site is in beta)
+/*// DebugMe (bug tracker plugin while site is in beta)
 (function (t, d) {
     var dbg = d.createElement("script");
     dbg.type = "text/javascript";
