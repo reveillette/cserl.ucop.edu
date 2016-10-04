@@ -807,7 +807,7 @@ ul.menu.nav.navbar-nav:not(.secondary) li > a:hover, ul.menu.nav.navbar-nav:not(
     max-width: 20vw;
     margin: 0.75vw; } }
 .node-teaser, .node-teaser .node-readmore a, .node-teaser .field-type-media video, .node-teaser .google_map_field_display, .node-teaser .field-type-media iframe {
-  height: 20vh;
+  height: 30vh; /* 20vh; */
   /*height: 220px;*/ }
 
 /* Teasers */
