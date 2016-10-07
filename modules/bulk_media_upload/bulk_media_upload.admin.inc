@@ -90,7 +90,9 @@ function bulk_media_upload_admin($form, &$form_state) {
   if ($selected_entity_type && $selected_bundle) {
     // Search for supported fields and add them to the dropdown.
     $fields = field_info_instances($selected_entity_type, $selected_bundle);
-    $supported_modules = array('media', 'image', 'file');
+    // KARI  $supported_modules = array('media', 'image', 'file');
+    $supported_modules = array('mediafield', 'image', 'file');
+
     $mediafields = array();
     
     foreach ($fields as $field) {
