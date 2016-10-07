@@ -282,10 +282,12 @@
 						$(this).find('.node-readmore a').css('background-color', "#e44c9a");
 						$(this).find('.node-readmore a').css('mix-blend-mode', "normal");
 						$(this).find('header, .field-name-field-home-institution, .field-name-field-title, .field-name-field-organization, .field-name-field-tags').slideToggle(200);
-					    var video = $(this).find('video');
+					    /*
+                                            var video = $(this).find('video');
 					    if (video.length > 0) {
 					    	video[0].play(); 
 					    }
+                                            */
 					});
 
 					$('.node-teaser').mouseleave(function() {
@@ -296,10 +298,12 @@
 						// $(this).find('.node-readmore a').css('background-color', "#1295d8");
 						// $(this).find('.node-readmore a').css('mix-blend-mode', "multiply");
 						$(this).find('header, .field-name-field-home-institution, .field-name-field-title, .field-name-field-organization, .field-name-field-tags').slideToggle(200);
-						var video = $(this).find('video');
+                                            /*
+                                            var video = $(this).find('video');
 					    if (video.length > 0) {
 					    	video[0].pause(); 
-					    }		
+					    }	
+                                            */
 					});			
 
 				// Forms
