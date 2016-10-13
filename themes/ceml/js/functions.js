@@ -594,7 +594,7 @@
 					}
 				}
 
-				// Change "download" link to "go to link" for an oembed (web) media file
+				// Change "download" link to "View online" for an oembed (web) media file
 				if ($('body').hasClass('node-type-media')) {
 					if($('.field-type-media .file[class*=oembed]').length > 0) {
 						$('.views-field-download .field-content a').text("View online");
