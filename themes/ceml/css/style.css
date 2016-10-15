@@ -874,14 +874,14 @@ li.node-readmore {
   position: relative; }
 
 /* Contents */
-.node-teaser .field-type-image img, .node-teaser .field-type-media img, .node-teaser .field-type-media img, .node-teaser .google_map_field_display, .node-teaser .field-type-media iframe {
+.node-teaser .field-type-image img, .node-teaser .field-type-media img, .node-teaser .google_map_field_display, .node-teaser .field-type-media iframe {
   top: 0;
   left: 0;
   min-width: 100%;
   width: auto; }
 
 /* Images only */
-.node-teaser .field-type-image img, .node-teaser .field-type-media img, .node-teaser .field-type-media img {
+.node-teaser .field-type-image img, .node-teaser .field-type-media img {
   width: 100%; }
 
 .node-teaser .google-map-field .gmnoprint {
