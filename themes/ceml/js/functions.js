@@ -1,4 +1,5 @@
 // DebugMe (bug tracker plugin while site is in beta)
+// replaced with Kari's account
 (function (t, d) {
     var dbg = d.createElement("script");
     dbg.type = "text/javascript";
@@ -9,8 +10,7 @@
         dbm.init();
     };
     d.getElementsByTagName("head")[0].appendChild(dbg);
-})("n9n7bacbec", document);
-
+})("wcj5z4ii", document);
 
 // Site functions 
 (function ($) {  // NOTE: all $(document).ready functions must be written this way for jQuery to work on a Drupal installation!!
@@ -542,10 +542,12 @@
 				}
 
 				// Add instructions to Add Person name field 
-				if ($('body').hasClass('page-node-add-person') || $('body').hasClass('page-node-edit')) {
+				/*  PROBLEM, this helptext is replicating when a user types in auto complete fields
+                                 if ($('body').hasClass('page-node-add-person') || $('body').hasClass('page-node-edit')) {
 					var helptext = "<div class='help-block'>Please enter a first and last name in the Name field, e.g. John Doe.</div>";
 					$(helptext).insertAfter('.form-item-title .form-control');	
 				}
+                                */
 
 				// Change wording of "save" button to "publish"
 				$('.page-node-add #edit-actions #edit-submit').text('Publish');
