@@ -1933,6 +1933,9 @@ ul.bef-tree-child {
   background: none;
   background-color: #eef9ff; }
 
+.plupload_buttons a.plupload_start {
+  color: #e44c9a !important; }
+
 .container {
   position: relative; }
 

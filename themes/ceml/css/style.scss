@@ -1417,6 +1417,7 @@
     .plupload_filelist_header { border-bottom: $border $blue; }
     .plupload_filelist_footer { border-top: $border $blue; }
     .plupload_filelist li { border-bottom: 1px dotted $blue; background: none; background-color: $background-color; }
+    .plupload_buttons a.plupload_start {color: $accent !important;}
 
     .container { position: relative; }
     :focus { outline: none !important; text-decoration: none !important; }
