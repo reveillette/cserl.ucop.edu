@@ -542,12 +542,13 @@
 				}
 
 				// Add instructions to Add Person name field 
-				/*  PROBLEM, this helptext is replicating when a user types in auto complete fields
                                  if ($('body').hasClass('page-node-add-person') || $('body').hasClass('page-node-edit')) {
 					var helptext = "<div class='help-block'>Please enter a first and last name in the Name field, e.g. John Doe.</div>";
-					$(helptext).insertAfter('.form-item-title .form-control');	
+					// check to see if helptext exists
+                                        if ($('.form-item-title .form-control + .help-block').length == 0) {
+                                            $(helptext).insertAfter('.form-item-title .form-control');
+                                        }	
 				}
-                                */
 
 				// Change wording of "save" button to "publish"
 				$('.page-node-add #edit-actions #edit-submit').text('Publish');
