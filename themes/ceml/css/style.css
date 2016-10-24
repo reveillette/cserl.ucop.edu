@@ -858,10 +858,7 @@ li.node-readmore {
 
 /* Teaser overlay */
 .node-teaser .node-readmore a {
-  border: none !important;
-  background-color: #1295d8;
-  mix-blend-mode: overlay;
-  opacity: 0.6; }
+  border: none !important; }
 
 .node-teaser header, .node-teaser .field-name-field-home-institution, .node-teaser .field-name-field-title, .node-teaser .field-name-field-organization, .node-teaser .field-name-field-tags {
   display: none; }
