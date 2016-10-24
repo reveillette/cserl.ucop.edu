@@ -280,7 +280,7 @@
 					$('.node-teaser').mouseenter(function() {
 						$(this).find('.node-readmore a').filter(':not(:animated)').fadeTo(200, 0.9);
 						$(this).find('.node-readmore a').css('background-color', "#e44c9a");
-						$(this).find('.node-readmore a').css('mix-blend-mode', "normal");
+						//$(this).find('.node-readmore a').css('mix-blend-mode', "normal");  // remove blue tint
 						$(this).find('header, .field-name-field-home-institution, .field-name-field-title, .field-name-field-organization, .field-name-field-tags').slideToggle(200);
 					    /*
                                             var video = $(this).find('video');
@@ -293,7 +293,7 @@
 					$('.node-teaser').mouseleave(function() {
 						$(this).find('.node-readmore a').filter(':not(:animated)').fadeTo(200, 0.6);
 						$(this).find('.node-readmore a').css('background-color', "#1295d8");
-						$(this).find('.node-readmore a').css('mix-blend-mode', "overlay");
+						//$(this).find('.node-readmore a').css('mix-blend-mode', "overlay"); // remove blue tint
 						// $(this).find('.node-readmore a').fadeTo(200, 1);
 						// $(this).find('.node-readmore a').css('background-color', "#1295d8");
 						// $(this).find('.node-readmore a').css('mix-blend-mode', "multiply");

@@ -734,7 +734,7 @@
 
 
     /* Teaser overlay */
-    .node-teaser .node-readmore a { border: none !important; background-color: $blue; mix-blend-mode: overlay; opacity: 0.6; }
+    .node-teaser .node-readmore a { border: none !important; }// remove blue tint   background-color: $blue; mix-blend-mode: overlay; opacity: 0.6; }
     .node-teaser header, .node-teaser .field-name-field-home-institution, .node-teaser .field-name-field-title, .node-teaser .field-name-field-organization, .node-teaser .field-name-field-tags { display: none; }
 
     /* Teaser Background */   
