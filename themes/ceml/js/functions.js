@@ -291,9 +291,10 @@
 					});
 
 					$('.node-teaser').mouseleave(function() {
-						$(this).find('.node-readmore a').filter(':not(:animated)').fadeTo(200, 0.6);
-						$(this).find('.node-readmore a').css('background-color', "#1295d8");
-						//$(this).find('.node-readmore a').css('mix-blend-mode', "overlay"); // remove blue tint
+						$(this).find('.node-readmore a').filter(':not(:animated)').fadeTo(200, 0.6)	
+                                                $(this).find('.node-readmore a').css('background', "none"); // remove blue tint, KARI
+                                                // $(this).find('.node-readmore a').css('background-color', "#1295d8"); // remove blue tint, KARI
+						// $(this).find('.node-readmore a').css('mix-blend-mode', "overlay"); // remove blue tint, Kari
 						// $(this).find('.node-readmore a').fadeTo(200, 1);
 						// $(this).find('.node-readmore a').css('background-color', "#1295d8");
 						// $(this).find('.node-readmore a').css('mix-blend-mode', "multiply");
