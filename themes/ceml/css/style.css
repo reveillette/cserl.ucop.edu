@@ -1706,6 +1706,9 @@ ul.bef-tree-child {
 #user-register-form .field-name-field-cserl-relationship {
   padding-bottom: 15px; }
 
+#user-register-form .captcha {
+  padding-bottom: 15px; }
+
 .page-signin .form-submit {
   float: none !important; }
 
