@@ -541,9 +541,24 @@
 					    $(this).text($(this).text().replace('-',''));
 					});
 				}
+                                /* NOT WORKING
+                                // BULK Add Media: remove options to tag with Person, Place, or Media (since these must be auto-set, not user-set)
+				if ($('body').hasClass('page-admin-content-file-bulk-upload')) {
+					$('#edit-default-values-field-content-type-und option:contains("People")').remove();
+					$('#edit-default-values-field-content-type-und option[value="32"]').remove();
+					$('#edit-default-values-field-content-type-und option:contains("Media")').remove();
+					$('#edit-default-values-field-content-type-und option[value="31"]').remove();
+					$('#edit-default-values-field-content-type-und option:contains("Places")').remove();
+					$('#edit-default-values-field-content-type-und option[value="33"]').remove();
 
+					// Remove dashes from other options
+					$('#edit-default-values-field-content-type-und option:contains("-")').each(function(){
+					    $(this).text($(this).text().replace('-',''));
+					});
+				}
+                                */
 				// Add instructions to Add Person name field 
-                                 if ($('body').hasClass('page-node-add-person') || $('body').hasClass('page-node-edit')) {
+                                 if ($('form').hasClass('page-node-add-person') || $('body').hasClass('page-node-edit')) {
 					var helptext = "<div class='help-block'>Please enter a first and last name in the Name field, e.g. John Doe.</div>";
 					// check to see if helptext exists
                                         if ($('.form-item-title .form-control + .help-block').length == 0) {
@@ -613,6 +628,17 @@
 						}
 					});
 				}
+
+                        // Content Admin Tasks
+                            // hide full menus for Content Admin
+                            // would be better to do this in a menu hook where we could check user role
+                            // for now, works b/c nav-tabs class does not exist for default admin theme.
+                            if ($('body').hasClass('page-admin-structure-taxonomy-tags') ||
+                                $('body').hasClass('page-admin-content-comment'))
+                                    { // only perform Tags list page
+                                $('ul.nav-tabs').remove();
+                                $('.region-help').remove();
+                            }
 
 	    }
 
