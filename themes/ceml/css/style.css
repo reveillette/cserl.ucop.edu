@@ -1449,6 +1449,9 @@ ul.bef-tree-child {
 .form-type-file, .page-user-edit #edit-picture--3 .form-type-file label {
   margin-bottom: 0; }
 
+.view-details-person .views-field-field-place-referrers li {
+  list-style-type: disc; }
+
 /* Media */
 .page-node-edit.node-type-media .group-basic-info, .page-node-add-media .group-basic-info {
   width: 55%; }
