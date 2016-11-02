@@ -1124,32 +1124,6 @@
     .node-form .panel-body, #user-profile-form--2 .panel-body { padding: 0; }
     .node-form fieldset button, #user-profile-form--2 fieldset button { margin-bottom: $smallPadding; }
 
-    /* User */
-    .page-user-edit .group-basic-info { width: 50%; }
-    .page-user-edit .group-details { width: 45%; }
-    .page-user-edit .form-type-password { display: inline-block; clear: none; width: 50%; }
-    .page-user-edit #edit-picture--3 { 
-        border: none !important; 
-        padding: 0 !important; 
-        margin-top: $smallPadding !important;
-        margin-left: 0 !important; 
-    }
-    .page-user-edit #edit-picture--3 .form-type-file, .page-user-edit #edit-picture--3 .user-picture { 
-        width: 45%; 
-        display: inline-block; 
-        clear: none; 
-        vertical-align: top; 
-    }
-    .form-type-file, .page-user-edit #edit-picture--3 .form-type-file { 
-        top: -19px;
-        position: relative;
-        margin-left: $smallPadding;
-    }
-    .form-type-file, .page-user-edit #edit-picture--3 .form-type-file label { margin-bottom: 0; } 
-    
-    .view-details-person .views-field-field-place-referrers li { list-style-type: disc; }
-
-
     /* Media */
     .page-node-edit.node-type-media .group-basic-info, .page-node-add-media .group-basic-info { width: 55%; }
     .page-node-edit.node-type-media .group-media, .page-node-add-media .group-media { width: 40%; }
@@ -1262,6 +1236,8 @@
 
 /* USER ACCOUNT PAGES - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
+
+    /* User register & sign-in forms */
     .pane-user-login-form, .pane-user-password-form, .pane-user-register-form, .reset-password { padding: 0 $largePadding; }
     .page-signin .panel-separator { margin: 0; }
 
@@ -1272,7 +1248,6 @@
     }
 
     .page-signin .form-actions { float: none; }
-
 
     #shib_login_url { height: 0; }
 
@@ -1319,7 +1294,28 @@
     /* User relationships */
     .page-user-relationships .main-container .tabs--secondary { display: none; }
 
-
+    /* User edit/profile form */
+    .page-user-edit .form-type-password { display: inline-block; clear: none; width: 50%; }
+    .page-user-edit #edit-picture--3 { 
+        border: none !important; 
+        padding: 0 !important; 
+        margin-top: $smallPadding !important;
+        margin-left: 0 !important; 
+    }
+    .page-user-edit #edit-picture--3 .form-type-file, .page-user-edit #edit-picture--3 .user-picture { 
+        width: 45%; 
+        display: inline-block; 
+        clear: none; 
+        vertical-align: top; 
+    }
+    .form-type-file, .page-user-edit #edit-picture--3 .form-type-file { 
+        top: -19px;
+        position: relative;
+        margin-left: $smallPadding;
+    }
+    .form-type-file, .page-user-edit #edit-picture--3 .form-type-file label { margin-bottom: 0; } 
+    
+    .view-details-person .views-field-field-place-referrers li { list-style-type: disc; }
 /* PRIVATE MESSAGES - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
     /* Messages homepage */
