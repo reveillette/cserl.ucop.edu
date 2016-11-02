@@ -316,7 +316,7 @@
 					$('.field-add-more-submit').text("Add Item");
 
 					// Turn cancel links into buttons
-					$('#edit-cancel').addClass('btn btn-secondary');
+					$('#edit-cancel').addClass('btn btn-default');
 
 				// Tables 
 					
