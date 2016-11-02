@@ -2023,7 +2023,8 @@ ul.bef-tree-child {
   opacity: 0.75; }
 
 .carousel .carousel-caption a {
-  color: #e44c9a !important; }
+  color: #e44c9a !important;
+  font-weight: bold; }
 
 .carousel .carousel-caption .caption-title {
   margin-left: 20px;
