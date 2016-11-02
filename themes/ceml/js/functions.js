@@ -1,5 +1,5 @@
 // DebugMe (bug tracker plugin while site is in beta)
-// replaced with Kari's account
+// replaced with Kari's DebugMe account 
 (function (t, d) {
     var dbg = d.createElement("script");
     dbg.type = "text/javascript";
