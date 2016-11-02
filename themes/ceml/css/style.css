@@ -245,6 +245,9 @@ th:not(.field-label) {
 .panel thead {
   padding-top: 15px; }
 
+fieldset.panel {
+  margin: 50px 0 !important; }
+
 /* Collapsible fieldsets */
 fieldset.collapsible {
   border: none !important; }
@@ -276,6 +279,29 @@ fieldset.collapsible .form-item > label {
 a.panel-title, #user-profile-form--2 a.panel-title {
   line-height: inherit;
   border-bottom: none !important; }
+
+/* Non-collapsible fieldsets */
+fieldset:not(.collapsible) .form-item, fieldset, #user-profile-form--2 .form-item {
+  position: relative; }
+
+fieldset:not(.collapsible) .panel-heading {
+  padding: 0 !important; }
+
+fieldset:not(.collapsible) .panel-title {
+  position: absolute;
+  top: -27px;
+  margin-left: -15px;
+  margin-bottom: 4px; }
+
+fieldset:not(.collapsible) .panel-body {
+  padding: 0; }
+
+fieldset:not(.collapsible) button {
+  margin-bottom: 15px; }
+
+/* Nested fieldsets */
+fieldset:not(.collapsible) fieldset {
+  margin: 50px 0 0 0 !important; }
 
 /* Add Another Item */
 .field-multiple-table tbody tr, .field-multiple-table tbody tr td {
@@ -1397,25 +1423,13 @@ ul.bef-tree-child {
   margin: 10px;
   margin-bottom: 30px !important; }
 
-.node-form .form-item, fieldset, #user-profile-form--2 .form-item {
-  position: relative; }
-
+/* Nested fieldsets */
 .node-form > div > .form-wrapper > .form-item > .control-label, .node-form > div > .form-wrapper > div:not(.panel-body) > .form-item > .control-label, #user-profile-form--2 > div > .form-wrapper > .form-item > .control-label, #user-profile-form--2 > div > .form-wrapper > div:not(.panel-body) > .form-item > .control-label {
   position: absolute;
   top: -34px; }
 
-.node-form .panel-heading, #user-profile-form--2 .panel-heading {
-  padding: 0 !important; }
-
-.node-form .panel-title, #user-profile-form--2 .panel-title {
-  position: absolute;
-  top: -20px; }
-
-.node-form .panel-body, #user-profile-form--2 .panel-body {
-  padding: 0; }
-
-.node-form fieldset button, #user-profile-form--2 fieldset button {
-  margin-bottom: 15px; }
+.node-form fieldset.panel {
+  margin: 10px 10px 30px 10px !important; }
 
 /* Media */
 .page-node-edit.node-type-media .group-basic-info, .page-node-add-media .group-basic-info {
@@ -1560,10 +1574,10 @@ ul.bef-tree-child {
 
 .page-node-add #edit-author .form-autocomplete > .control-label {
   position: relative;
-  top: calc(-20px - 14px); }
+  top: calc(-27px - 14px); }
 
 .page-node-add #edit-author .input-group {
-  margin-top: -20px; }
+  margin-top: -27px; }
 
 /* Submit buttons */
 @media (min-width: 1200px) {
@@ -1716,6 +1730,10 @@ ul.bef-tree-child {
 .reset-password a {
   color: white !important;
   width: auto; }
+
+/* User notifications */
+.page-user-notifications #edit-options {
+  margin: 30px 0 !important; }
 
 /* User relationships */
 .page-user-relationships .main-container .tabs--secondary {
