@@ -1744,6 +1744,9 @@ ul.bef-tree-child {
   clear: none;
   vertical-align: top; }
 
+.page-user-edit .tabbable {
+  display: none; }
+
 .form-type-file, .page-user-edit #edit-picture--3 .form-type-file {
   top: -19px;
   position: relative;
