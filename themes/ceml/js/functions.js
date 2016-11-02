@@ -66,7 +66,7 @@
 		
 				// Admin Dashboard
 				if ($('body').hasClass('page-admin-dashboard') || $('body').hasClass('page-admin') || $("body").hasClass('page-admin-users') || $("body").hasClass('page-admin-content') || $("body").hasClass('page-user')) {
-					var initialLibrary = $('label[for="edit-content"]').siblings().add('#block-views-exp-content-admin-page #edit-secondary-wrapper');
+					var initialLibrary = $('label[for="edit-content"]').siblings().add('#edit-content-wrapper+#edit-secondary-wrapper');
 					toggleWidget(initialLibrary, function() {
 
 						// Set initial arrow direction
@@ -481,9 +481,9 @@
 						var toggle;
 
 						if($(e.target).attr('for') == 'edit-content') {
-							toggle = $('#edit-users-wrapper>label').siblings('.views-widget').add('#block-views-exp-content-admin-page #edit-secondary-wrapper');
+							toggle = $('#edit-users-wrapper>label').siblings('.views-widget').add('#edit-users-wrapper+#edit-secondary-wrapper');
 						} else if ($(e.target).attr('for') == 'edit-users') {			
-							toggle = $('#edit-content-wrapper>label').siblings('.views-widget').add('#block-views-exp-content-admin-page #edit-secondary-wrapper');
+							toggle = $('#edit-content-wrapper>label').siblings('.views-widget').add('#edit-content-wrapper+#edit-secondary-wrapper');
 						}
 
 						// Show/hide appropriate widget and table when minimize/maximize is clicked
