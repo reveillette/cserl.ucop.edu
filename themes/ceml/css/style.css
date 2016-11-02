@@ -1722,6 +1722,11 @@ ul.bef-tree-child {
   display: none; }
 
 /* User edit/profile form */
+.page-user-edit .panel-pane {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top; }
+
 .page-user-edit .form-type-password {
   display: inline-block;
   clear: none;

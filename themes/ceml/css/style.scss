@@ -1295,6 +1295,7 @@
     .page-user-relationships .main-container .tabs--secondary { display: none; }
 
     /* User edit/profile form */
+    .page-user-edit .panel-pane { display: inline-block; width: 45%; vertical-align: top; }
     .page-user-edit .form-type-password { display: inline-block; clear: none; width: 50%; }
     .page-user-edit #edit-picture--3 { 
         border: none !important; 
@@ -1316,6 +1317,7 @@
     .form-type-file, .page-user-edit #edit-picture--3 .form-type-file label { margin-bottom: 0; } 
     
     .view-details-person .views-field-field-place-referrers li { list-style-type: disc; }
+
 /* PRIVATE MESSAGES - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
     /* Messages homepage */
