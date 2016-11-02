@@ -572,8 +572,10 @@
 				$('.page-node-add #edit-actions #edit-submit').text('Publish');
 
 				// "Save as draft" button
-				if ($('#edit-draft').length == 0) {
-					$('.page-node-add #edit-actions #edit-submit').after('<button type="submit" id="edit-draft" name="op" value="Save as Draft" class="btn btn-success form-submit">Save Draft</button>');
+				if ($('body').hasClass('page-node-add-media ') || $('body').hasClass('page-node-add-person') || $("body").hasClass('page-node-add-place')) { // only perform on node add pages
+					if ($('#edit-draft').length == 0) {
+						$('#edit-actions #edit-submit').after('<button type="submit" id="edit-draft" name="op" value="Save as Draft" class="btn btn-success form-submit">Save Draft</button>');
+					}
 				}
 
 				// "Save as draft" button automatically unchecks Publish checkbox and then auto-submits
