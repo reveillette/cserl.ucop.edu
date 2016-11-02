@@ -1458,3 +1458,52 @@
     text-transform: capitalize;
     font-weight: bold;
 }
+
+
+/* CAROUSEL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+.carousel-indicators {
+    bottom: 0px;
+}
+.carousel-indicators li.bullet.active {
+    background-color: $accent !important;
+    foreground-color: $accent !important;
+}
+.carousel-indicators li.bullet {
+    background-color: white;
+}
+.carousel .carousel-inner {
+    position: relative;
+}
+.carousel .carousel-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 60%;
+    margin: auto;
+    text-align: left !important;
+    font-family: $mediumFont;
+    background-color: $blue;
+    opacity: 0.75;
+}
+.carousel .carousel-caption a {
+    color: $accent !important;
+}
+.carousel .carousel-caption .caption-title {
+    margin-left: 20px;
+    font-size: 20px;
+    color: white;
+}
+.carousel .carousel-caption .caption-body {
+    font-size: 16px;
+    margin-top: 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+body.front .breadcrumb, #block-views-exp-find-content-page {
+        margin-top: 75px;
+}
