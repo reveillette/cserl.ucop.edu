@@ -860,7 +860,7 @@ li.node-readmore {
 .node-teaser .node-readmore a {
   border: none !important; }
 
-.node-teaser header, .node-teaser .field-name-field-home-institution, .node-teaser .field-name-field-title, .node-teaser .field-name-field-organization, .node-teaser .field-name-field-tags {
+.node-teaser header, .node-teaser .field-name-field-affiliation, .node-teaser .field-name-field-title, .node-teaser .field-name-field-organization, .node-teaser .field-name-field-tags {
   display: none; }
 
 /* Teaser Background */
@@ -885,7 +885,7 @@ li.node-readmore {
   display: none; }
 
 /* Teaser Text */
-.node-teaser header h2, .node-teaser header h2 a, .node-teaser .submitted, .node-teaser .field-name-field-home-institution, .node-teaser .field-name-field-title, .node-teaser .field-name-field-organization, .node-teaser .field-name-field-tags {
+.node-teaser header h2, .node-teaser header h2 a, .node-teaser .submitted, .node-teaser .field-name-field-affiliation, .node-teaser .field-name-field-title, .node-teaser .field-name-field-organization, .node-teaser .field-name-field-tags {
   z-index: 1;
   color: white !important;
   position: absolute; }
@@ -910,7 +910,7 @@ li.node-readmore {
 .node-teaser .field-name-field-title {
   top: 40%; }
 
-.node-teaser .field-name-field-home-institution {
+.node-teaser .field-name-field-affiliation {
   top: 50%; }
 
 .node-teaser .field-name-field-organization {

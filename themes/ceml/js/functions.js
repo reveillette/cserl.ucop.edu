@@ -281,7 +281,7 @@
 						$(this).find('.node-readmore a').filter(':not(:animated)').fadeTo(200, 0.9);
 						$(this).find('.node-readmore a').css('background-color', "#e44c9a");
 						//$(this).find('.node-readmore a').css('mix-blend-mode', "normal");  // remove blue tint
-						$(this).find('header, .field-name-field-home-institution, .field-name-field-title, .field-name-field-organization, .field-name-field-tags').slideToggle(200);
+                                                $(this).find('header, .field-name-field-affiliation, .field-name-field-title, .field-name-field-organization, .field-name-field-tags').slideToggle(200);
 					    /*
                                             var video = $(this).find('video');
 					    if (video.length > 0) {
@@ -298,7 +298,7 @@
 						// $(this).find('.node-readmore a').fadeTo(200, 1);
 						// $(this).find('.node-readmore a').css('background-color', "#1295d8");
 						// $(this).find('.node-readmore a').css('mix-blend-mode', "multiply");
-						$(this).find('header, .field-name-field-home-institution, .field-name-field-title, .field-name-field-organization, .field-name-field-tags').slideToggle(200);
+                                                $(this).find('header, .field-name-field-affiliation, .field-name-field-title, .field-name-field-organization, .field-name-field-tags').slideToggle(200);
                                             /*
                                             var video = $(this).find('video');
 					    if (video.length > 0) {
@@ -423,7 +423,8 @@
 				$("#user-login .form-actions button").removeClass('btn-default');
 
 				// Set value of Role field based on url parameter
-				var role = getParameter("role");
+                                // KARI: obsolete, this param no longer exists
+				/*var role = getParameter("role");
 				
 				if (role == "faculty") {
 					$('#edit-field-user-role-und option[value="5"]').remove();
@@ -438,6 +439,7 @@
 					$('#edit-field-user-role-und option[value="5"]').remove();					
 					$('#edit-field-user-role-und').val(7);
 				}
+                */
 
 				// Show/hide "reset password" link on click
 				$('.reset-password a').off('click').click(function(e) {
