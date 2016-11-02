@@ -66,7 +66,7 @@
 		
 				// Admin Dashboard
 				if ($('body').hasClass('page-admin-dashboard') || $('body').hasClass('page-admin') || $("body").hasClass('page-admin-users') || $("body").hasClass('page-admin-content') || $("body").hasClass('page-user')) {
-					var initialLibrary = $('label[for="edit-content"]').siblings().add('#block-views-exp-content-admin-page #edit-secondary-wrapper');
+					var initialLibrary = $('label[for="edit-content"]').siblings().add('#edit-content-wrapper+#edit-secondary-wrapper');
 					toggleWidget(initialLibrary, function() {
 
 						// Set initial arrow direction
@@ -481,9 +481,9 @@
 						var toggle;
 
 						if($(e.target).attr('for') == 'edit-content') {
-							toggle = $('#edit-users-wrapper>label').siblings('.views-widget').add('#block-views-exp-content-admin-page #edit-secondary-wrapper');
+							toggle = $('#edit-users-wrapper>label').siblings('.views-widget').add('#edit-users-wrapper+#edit-secondary-wrapper');
 						} else if ($(e.target).attr('for') == 'edit-users') {			
-							toggle = $('#edit-content-wrapper>label').siblings('.views-widget').add('#block-views-exp-content-admin-page #edit-secondary-wrapper');
+							toggle = $('#edit-content-wrapper>label').siblings('.views-widget').add('#edit-content-wrapper+#edit-secondary-wrapper');
 						}
 
 						// Show/hide appropriate widget and table when minimize/maximize is clicked
@@ -529,36 +529,21 @@
 
 				}
 
-				// Add Media: remove options to tag with Person, Place, or Media (since these must be auto-set, not user-set)
-				if ($('body').hasClass('page-node-add-media') || $('body').hasClass('page-node-edit')) {
-					$('#edit-field-content-type-und option:contains("People")').remove();
-					$('#edit-field-content-type-und option[value="32"]').remove();
-					$('#edit-field-content-type-und option:contains("Media")').remove();
-					$('#edit-field-content-type-und option[value="31"]').remove();
-					$('#edit-field-content-type-und option:contains("Places")').remove();
-					$('#edit-field-content-type-und option[value="33"]').remove();
-
+				// Add Media/Add Bulk Media: remove options to tag with Person, Place, or Media (since these must be auto-set, not user-set)
+				if ($('body').hasClass('page-node-add-media') || $('body').hasClass('page-node-edit') || $('body').hasClass('page-admin-content-file-bulk-upload')) {
+					$('#edit-field-content-type-und option:contains("People")').add('#edit-default-values-field-content-type-und option:contains("People")').remove();
+					$('#edit-field-content-type-und option[value="32"]').add('#edit-default-values-field-content-type-und option[value="32"]').remove();
+					$('#edit-field-content-type-und option:contains("Media")').add('#edit-default-values-field-content-type-und option:contains("Media")').remove();
+					$('#edit-field-content-type-und option[value="31"]').add('#edit-default-values-field-content-type-und option[value="31"]').remove();
+					$('#edit-field-content-type-und option:contains("Places")').add('#edit-default-values-field-content-type-und option:contains("Places")').remove();
+					$('#edit-field-content-type-und option[value="33"]').add('#edit-default-values-field-content-type-und option[value="33"]').remove();
+					
 					// Remove dashes from other options
-					$('#edit-field-content-type-und option:contains("-")').each(function(){
+					$('#edit-field-content-type-und option:contains("-")').add('#edit-default-values-field-content-type-und option:contains("-")').each(function(){
 					    $(this).text($(this).text().replace('-',''));
 					});
 				}
-                                /* NOT WORKING
-                                // BULK Add Media: remove options to tag with Person, Place, or Media (since these must be auto-set, not user-set)
-				if ($('body').hasClass('page-admin-content-file-bulk-upload')) {
-					$('#edit-default-values-field-content-type-und option:contains("People")').remove();
-					$('#edit-default-values-field-content-type-und option[value="32"]').remove();
-					$('#edit-default-values-field-content-type-und option:contains("Media")').remove();
-					$('#edit-default-values-field-content-type-und option[value="31"]').remove();
-					$('#edit-default-values-field-content-type-und option:contains("Places")').remove();
-					$('#edit-default-values-field-content-type-und option[value="33"]').remove();
 
-					// Remove dashes from other options
-					$('#edit-default-values-field-content-type-und option:contains("-")').each(function(){
-					    $(this).text($(this).text().replace('-',''));
-					});
-				}
-                                */
 				// Add instructions to Add Person name field 
                                  if ($('form').hasClass('page-node-add-person') || $('body').hasClass('page-node-edit')) {
 					var helptext = "<div class='help-block'>Please enter a first and last name in the Name field, e.g. John Doe.</div>";
