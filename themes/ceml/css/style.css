@@ -2041,8 +2041,7 @@ ul.bef-tree-child {
   margin: auto;
   text-align: left !important;
   font-family: "KievitWebProMedi", Arial, Helvetica, sans-serif;
-  background-color: #1295d8;
-  opacity: 0.75; }
+  background-color: rgba(18, 149, 216, 0.6); }
 
 .carousel .carousel-caption a {
   color: #e44c9a !important;
