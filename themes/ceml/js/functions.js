@@ -22,8 +22,16 @@
 			$("#navbar .logo").attr('href', '/');
 
 			// Add "bubble" to Explore text on homepage to non-logged-in users
-			$(".front.not-logged-in .breadcrumb li:contains('Explore')").data('toggle', 'tooltip').
-			data('original-title','To explore CSERL, create an account or sign in above');
+			var explore = $(".front.not-logged-in .breadcrumb li:contains('Explore')");
+			explore.attr('data-toggle', 'tooltip');
+			explore.attr('title', 'To explore CSERL, create an account or sign in above');
+			explore.attr('data-placement', 'right');
+
+			explore.tooltip();
+			explore.on({
+				mouseenter: function() { $(explore).tooltip('show') },
+				mouseleave: function() { $(explore).tooltip('hide') }
+			});
 
 			// Show "Find Content" dropdown overlay when url has "find-content" hash
 			if (window.location.hash == "#find-content") {

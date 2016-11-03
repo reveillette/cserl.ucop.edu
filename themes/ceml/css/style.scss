@@ -289,7 +289,10 @@
         padding: $smallPadding;
     }
 
-    .tooltip-arrow { border-top-color: white !important; }
+    .tooltip.top .tooltip-arrow { border-top-color: $blue !important; }
+    .tooltip.right .tooltip-arrow { border-right-color: $blue !important; }
+    .tooltip.bottom .tooltip-arrow { border-bottom-color: $blue !important; }
+    .tooltip.left .tooltip-arrow { border-left-color: $blue !important; }
 
     /* Alerts */
     .alert {

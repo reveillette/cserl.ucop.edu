@@ -335,8 +335,17 @@ fieldset:not(.collapsible) fieldset {
   text-align: left;
   padding: 15px; }
 
-.tooltip-arrow {
-  border-top-color: white !important; }
+.tooltip.top .tooltip-arrow {
+  border-top-color: #1295d8 !important; }
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: #1295d8 !important; }
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #1295d8 !important; }
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: #1295d8 !important; }
 
 /* Alerts */
 .alert {
