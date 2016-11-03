@@ -1310,11 +1310,8 @@
     .reset-password p { display: inline;  }
     .reset-password a { color: white !important; width: auto; }
 
-    /* User notifications */
-    .page-user-notifications #edit-options { margin: $medPadding 0 !important; }
-
-    /* User relationships */
-    .page-user-relationships .main-container .tabs--secondary { display: none; }
+    /* User account page (general) */
+    .page-user .region-content .bootstrap-twocol-stacked>.row { margin: 0 !important; }
 
     /* User profile */
     .page-user:not(.page-user-edit) .panel-pane { 
@@ -1325,42 +1322,26 @@
 
     .pane-node-content article > header { display: none; }
 
-    /* User edit form */
-    .page-user .region-content .bootstrap-twocol-stacked>.row { margin: 0 !important; }
-    .page-user-edit .panel-pane { 
-        display: block; 
-        width: 100%; 
-        clear: both; 
-    }
-    .page-user-edit .panel-separator { height: 100px; }
-    .page-user-edit #edit-submit, .page-user-edit #edit-submit--3 { float: right; }
+    /* User "Edit Account Info" and "Edit Profile Details" forms */
+    .nav-tabs li:nth-child(4) { display: none; }
 
-    .page-user-edit #edit-picture--3 { 
-        border: none !important; 
-        padding: 0 !important; 
-        margin-top: $smallPadding !important;
-        margin-left: 0 !important; 
-    }
-    .page-user-edit #edit-picture--3 .form-type-file, .page-user-edit #edit-picture--3 .user-picture { 
-        width: 45%; 
-        display: inline-block; 
-        clear: none; 
-        vertical-align: top; 
-        position: relative;
-    }
-    .page-user-edit .form-item-current-pass { width: 100%; }
+    .page-user-edit-profile .panel-pane, .page-user-edit-account .panel-pane { width: 100%; }
+    .page-user-edit-account #edit-submit, .page-user-edit-profile button[value="Save"] { float: right; }
 
-    .page-user-edit .tabbable { display: none; }
-    .page-user-edit .form-item-title { display: none; }
+    .page-user-edit-account .form-item-current-pass { width: 100%; }
 
-    .form-type-file, .page-user-edit #edit-picture--3 .form-type-file { 
-        top: -19px;
-        position: relative;
-        margin-left: $smallPadding;
-    }
-    .form-type-file, .page-user-edit #edit-picture--3 .form-type-file label { margin-bottom: 0; } 
+    .page-user-edit-profile .tabbable { display: none; }
+    .page-user-edit-profile .form-item-title { display: none; }
+    .page-user-edit-profile .node-form { margin-top: 0 !important; }
     
     .view-details-person .views-field-field-place-referrers li { list-style-type: disc; }
+
+    /* User notifications */
+    .page-user-notifications #edit-options { margin: $medPadding 0 !important; }
+
+    /* User relationships */
+    .page-user-relationships .main-container .tabs--secondary { display: none; }
+
 
 /* PRIVATE MESSAGES - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
