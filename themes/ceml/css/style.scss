@@ -1316,9 +1316,12 @@
     /* User profile */
     .page-user .pane-user-profile, .page-user .pane-node-content  { 
         display: inline-block; 
-        width: 49%; 
+        width: 45%; 
+        margin-right: $medPadding;
         vertical-align: top;
     }
+
+    .page-user .region-content h3 { width: 100%; }
 
     .pane-node-content article > header { display: none; }
 
