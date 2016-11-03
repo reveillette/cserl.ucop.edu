@@ -1749,7 +1749,7 @@ ul.bef-tree-child {
 /* User profile */
 .page-user .pane-user-profile, .page-user .pane-node-content {
   display: inline-block;
-  width: 45%;
+  width: 49%;
   vertical-align: top; }
 
 .pane-node-content article > header {
