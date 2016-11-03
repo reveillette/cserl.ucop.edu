@@ -1,4 +1,4 @@
-// DebugMe (bug tracker plugin while site is in beta)
+/*
 // replaced with Kari's account
 (function (t, d) {
     var dbg = d.createElement("script");
@@ -11,7 +11,7 @@
     };
     d.getElementsByTagName("head")[0].appendChild(dbg);
 })("wcj5z4ii", document);
-
+*/
 // Site functions 
 (function ($) {  // NOTE: all $(document).ready functions must be written this way for jQuery to work on a Drupal installation!!
 	$(document).ready(function() {
