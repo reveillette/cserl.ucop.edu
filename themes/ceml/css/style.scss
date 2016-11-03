@@ -1314,7 +1314,7 @@
     .page-user .region-content .bootstrap-twocol-stacked>.row { margin: 0 !important; }
 
     /* User profile */
-    .page-user:not(.page-user-edit) .panel-pane { 
+    .page-user .pane-user-profile, .page-user .pane-node-content  { 
         display: inline-block; 
         width: 45%; 
         vertical-align: top;
