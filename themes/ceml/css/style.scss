@@ -1475,49 +1475,46 @@
 
 
 /* CAROUSEL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-.carousel-indicators {
-    bottom: 0px;
-}
-.carousel-indicators li.bullet.active {
-    background-color: $accent !important;
-    foreground-color: $accent !important;
-}
-.carousel-indicators li.bullet {
-    background-color: white;
-}
-.carousel .carousel-inner {
-    position: relative;
-}
+.carousel-indicators li.bullet.active { background-color: $accent !important; }
+.carousel-indicators li.bullet { background-color: white; }
+
+.carousel .item { height: 100%; }
+.carousel .item img { min-height: 100%; }
+
 .carousel .carousel-caption {
-    position: absolute;
-    top: 0;
-    bottom: 0;
+    position: relative;
+    top: -80%;
     left: 0;
     right: 0;
     width: 70%;
-    height: 60%;
+    height: auto;
     margin: auto;
+    padding: $medPadding;
     text-align: left !important;
     font-family: $mediumFont;
     background-color: rgba(18,149,216,0.6);
 }
+.carousel .carousel-caption .caption-title, .carousel .carousel-caption .caption-body { color: white; }
+.carousel .carousel-caption .caption-title { font-size: 3vh; }
+.carousel .carousel-caption .caption-body { font-size: 2.25vh; }
+
 .carousel .carousel-caption a {
-    color: $accent !important;
+    text-decoration: underline;
+    color: white !important;
     font-weight: bold;
 }
-.carousel .carousel-caption .caption-title {
-    margin-left: 20px;
-    font-size: 20px;
-    color: white;
+.carousel .carousel-caption a:hover { color: $accent !important; }
+
+@media (min-width: $smScreen) and (max-width: $mdScreen) {
+    .carousel .carousel-inner { position: relative; height: 80vh; }
 }
-.carousel .carousel-caption .caption-body {
-    font-size: 16px;
-    margin-top: 1em;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: white;
+
+@media (min-width: $mdScreen) {
+    .carousel .carousel-inner { position: relative; height: 45vh; }
 }
 
 body.front .breadcrumb, #block-views-exp-find-content-page {
-        margin-top: 75px;
+    margin-top: 75px;
 }
+
+

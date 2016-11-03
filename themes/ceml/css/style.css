@@ -2017,48 +2017,56 @@ ul.bef-tree-child {
   font-weight: bold; }
 
 /* CAROUSEL - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-.carousel-indicators {
-  bottom: 0px; }
-
 .carousel-indicators li.bullet.active {
-  background-color: #e44c9a !important;
-  foreground-color: #e44c9a !important; }
+  background-color: #e44c9a !important; }
 
 .carousel-indicators li.bullet {
   background-color: white; }
 
-.carousel .carousel-inner {
-  position: relative; }
+.carousel .item {
+  height: 100%; }
+
+.carousel .item img {
+  min-height: 100%; }
 
 .carousel .carousel-caption {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  position: relative;
+  top: -80%;
   left: 0;
   right: 0;
   width: 70%;
-  height: 60%;
+  height: auto;
   margin: auto;
+  padding: 30px;
   text-align: left !important;
   font-family: "KievitWebProMedi", Arial, Helvetica, sans-serif;
   background-color: rgba(18, 149, 216, 0.6); }
 
-.carousel .carousel-caption a {
-  color: #e44c9a !important;
-  font-weight: bold; }
+.carousel .carousel-caption .caption-title, .carousel .carousel-caption .caption-body {
+  color: white; }
 
 .carousel .carousel-caption .caption-title {
-  margin-left: 20px;
-  font-size: 20px;
-  color: white; }
+  font-size: 3vh; }
 
 .carousel .carousel-caption .caption-body {
-  font-size: 16px;
-  margin-top: 1em;
-  margin-left: 20px;
-  margin-right: 20px;
-  color: white; }
+  font-size: 2.25vh; }
 
+.carousel .carousel-caption a {
+  text-decoration: underline;
+  color: white !important;
+  font-weight: bold; }
+
+.carousel .carousel-caption a:hover {
+  color: #e44c9a !important; }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .carousel .carousel-inner {
+    position: relative;
+    height: 80vh; } }
+@media (min-width: 992px) {
+  .carousel .carousel-inner {
+    position: relative;
+    height: 45vh; } }
 body.front .breadcrumb, #block-views-exp-find-content-page {
   margin-top: 75px; }
 
