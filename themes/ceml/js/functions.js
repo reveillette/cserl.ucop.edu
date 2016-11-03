@@ -421,6 +421,8 @@
 					$(window).resize(function() {
 						responsiveDiv($('#block-mefibs-mefibs-find-content-page-find'), $('.main-container'), carouselHeight, true, false);
 					});
+				}
+
 
 			// SIGN IN / CREATE ACCOUNT LAYOUTS
 				
