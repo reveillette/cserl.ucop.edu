@@ -322,7 +322,7 @@
 				// Forms
 				
 					// Change collapsible fieldsets to open
-					$('#edit-timezone--3, #edit-privatemsg--2, #edit-field-map-und-0').removeClass('collapsible');
+					$('#edit-timezone, #edit-privatemsg, #edit-timezone--3, #edit-privatemsg--2, #edit-field-map-und-0, ').removeClass('collapsible');
 
 					// Change wording of Add Another Item button
 					$('.field-add-more-submit').text("Add Item");

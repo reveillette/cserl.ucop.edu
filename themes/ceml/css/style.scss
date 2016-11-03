@@ -243,7 +243,7 @@
     .panel td .control-label { display: none; }
     .panel thead { padding-top: $smallPadding; }
 
-    fieldset.panel { margin: $largePadding 0 !important; }
+    fieldset.panel { margin: 0 0 $largePadding 0 !important; }
 
     /* Collapsible fieldsets */
     fieldset.collapsible { border: none !important; }     
@@ -260,9 +260,14 @@
     /* Non-collapsible fieldsets */
     fieldset:not(.collapsible) .form-item, fieldset, #user-profile-form--2 .form-item { position: relative; }
     fieldset:not(.collapsible) .panel-heading  { padding: 0 !important; }
-    fieldset:not(.collapsible) .panel-title { position: absolute; top: -27px; margin-left: -$smallPadding; margin-bottom: $tinyPadding; }
     fieldset:not(.collapsible) .panel-body { padding: 0; }
     fieldset:not(.collapsible) button { margin-bottom: $smallPadding; }
+    fieldset:not(.collapsible) .panel-title { 
+        position: absolute; 
+        top: -20px; 
+        margin: 0 0 0 -smallPadding !important; 
+        padding: 0 !important;
+    }   
     
     /* Nested fieldsets */
     fieldset:not(.collapsible) fieldset { margin: $largePadding 0 0 0 !important; }
@@ -1135,7 +1140,7 @@
 
     /* Nested fieldsets */
     .node-form>div>.form-wrapper>.form-item>.control-label, .node-form>div>.form-wrapper>div:not(.panel-body)>.form-item>.control-label, #user-profile-form--2>div>.form-wrapper>.form-item>.control-label, #user-profile-form--2>div>.form-wrapper>div:not(.panel-body)>.form-item>.control-label { position: absolute; top: -$medPadding - $tinyPadding; }
-    .node-form fieldset.panel { margin: $smallerPadding $smallerPadding $medPadding $smallerPadding !important; }
+    .node-form fieldset.panel { margin: $smallerPadding $smallerPadding $largePadding $smallerPadding !important; }
 
     /* Media */
     .page-node-edit.node-type-media .group-basic-info, .page-node-add-media .group-basic-info { width: 55%; }
@@ -1282,12 +1287,13 @@
     .help-block.password-help {
         width: 100%;
         position: relative;
-        color: white;
         border: none;
         left: 0;
         margin: 0 15px;
         padding: 15px 0 0 0;
     }
+
+    #user-register-form .help-block.password-help { color: white; }
 
     #user-register-form .form-required { display: none; }
 
@@ -1311,8 +1317,15 @@
     .page-user-relationships .main-container .tabs--secondary { display: none; }
 
     /* User edit/profile form */
-    .page-user-edit .panel-pane { display: inline-block; width: 45%; vertical-align: top; }
-    .page-user-edit .form-type-password { display: inline-block; clear: none; width: 50%; }
+    .page-user-edit .region-content .bootstrap-twocol-stacked>.row { margin: 0 !important; }
+    .page-user-edit .panel-pane { 
+        display: block; 
+        width: 100%; 
+        clear: both; 
+    }
+    .page-user-edit .panel-separator { height: 100px; }
+    .page-user-edit #edit-submit, .page-user-edit #edit-submit--3 { float: right; }
+
     .page-user-edit #edit-picture--3 { 
         border: none !important; 
         padding: 0 !important; 
@@ -1326,8 +1339,11 @@
         vertical-align: top; 
         position: relative;
     }
+    .page-user-edit .form-item-current-pass { width: 100%; }
 
     .page-user-edit .tabbable { display: none; }
+    .page-user-edit .form-item-title { display: none; }
+
     .form-type-file, .page-user-edit #edit-picture--3 .form-type-file { 
         top: -19px;
         position: relative;
