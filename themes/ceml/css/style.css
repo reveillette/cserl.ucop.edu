@@ -1367,8 +1367,8 @@ ul.bef-tree-child {
   float: right; }
 
 /* Confirm pages */
-.nav-tabs + .region-content {
-  margin-top: 30px; }
+.nav-tabs + .region-content fieldset:first {
+  margin-top: 30px !important; }
 
 /* ADD & EDIT CONTENT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Add Content: Initial screen */
@@ -1750,8 +1750,17 @@ ul.bef-tree-child {
 .page-user-relationships .main-container .tabs--secondary {
   display: none; }
 
-/* User edit/profile form */
-.page-user-edit .region-content .bootstrap-twocol-stacked > .row {
+/* User profile */
+.page-user:not(.page-user-edit) .panel-pane {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top; }
+
+.pane-node-content article > header {
+  display: none; }
+
+/* User edit form */
+.page-user .region-content .bootstrap-twocol-stacked > .row {
   margin: 0 !important; }
 
 .page-user-edit .panel-pane {

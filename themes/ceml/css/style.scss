@@ -1086,7 +1086,7 @@
     .page-admin-reports #dblog-clear-log-form { float: right; }
 
     /* Confirm pages */
-    .nav-tabs+.region-content { margin-top: $medPadding; }
+    .nav-tabs+.region-content fieldset:first { margin-top: $medPadding !important; }
 
 
 /* ADD & EDIT CONTENT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -1316,8 +1316,17 @@
     /* User relationships */
     .page-user-relationships .main-container .tabs--secondary { display: none; }
 
-    /* User edit/profile form */
-    .page-user-edit .region-content .bootstrap-twocol-stacked>.row { margin: 0 !important; }
+    /* User profile */
+    .page-user:not(.page-user-edit) .panel-pane { 
+        display: inline-block; 
+        width: 45%; 
+        vertical-align: top;
+    }
+
+    .pane-node-content article > header { display: none; }
+
+    /* User edit form */
+    .page-user .region-content .bootstrap-twocol-stacked>.row { margin: 0 !important; }
     .page-user-edit .panel-pane { 
         display: block; 
         width: 100%; 
