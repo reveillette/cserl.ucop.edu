@@ -480,6 +480,7 @@
 
 					noContact.change(function(e) {
 						if (noContact.prop('checked') == true) {
+							others.prop('checked', false);
 							others.prop('disabled', true);
 							others.parents(".control-label").addClass('disabled');
 						} else {
