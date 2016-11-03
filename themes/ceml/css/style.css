@@ -1358,7 +1358,7 @@ ul.bef-tree-child {
   float: right; }
 
 /* Confirm pages */
-.no-sidebars .region-content {
+.nav-tabs + .region-content {
   margin-top: 30px; }
 
 /* ADD & EDIT CONTENT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
