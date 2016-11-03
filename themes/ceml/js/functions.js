@@ -24,7 +24,7 @@
 			// Add "bubble" to Explore text on homepage to non-logged-in users
 			$(".front.not-logged-in .breadcrumb li:contains('Explore')").data('toggle', 'tooltip').
 			data('original-title','To explore CSERL, create an account or sign in above');
-			
+
 			// Show "Find Content" dropdown overlay when url has "find-content" hash
 			if (window.location.hash == "#find-content") {
 				window.setTimeout(function() {
@@ -409,11 +409,19 @@
 						});
 					}
 
+					// Set top position of Find Content overlay
+			
+						// Get height of header + navbar
+						var topPos = $("#carousel-bootstrap").height() * -1 + "px";
+						$("#block-mefibs-mefibs-find-content-page-find").css('top', 'topPos');
+
 					// Make sure height of Find Content overlay equals height of main container
 					responsiveDiv($('#block-mefibs-mefibs-find-content-page-find'), $('.main-container'), 0, true, false);
 					$(window).resize(function() {
 						responsiveDiv($('#block-mefibs-mefibs-find-content-page-find'), $('.main-container'), 0, true, false);
 					})
+
+
 
 				}
 
