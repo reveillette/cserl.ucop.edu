@@ -423,6 +423,7 @@
 						var carouselHeight = $("#carousel-bootstrap").height();
 						var topPos = carouselHeight * -1 + "px";
 						$("#block-mefibs-mefibs-find-content-page-find").css('top', topPos);
+						
 
 					// Make sure height of Find Content overlay equals height of main container
 					responsiveDiv($('#block-mefibs-mefibs-find-content-page-find'), $('.main-container'), carouselHeight, true, false);
