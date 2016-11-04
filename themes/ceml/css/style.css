@@ -246,7 +246,7 @@ th:not(.field-label) {
   padding-top: 15px; }
 
 fieldset.panel {
-  margin: 50px 0 !important; }
+  margin: 0 0 50px 0 !important; }
 
 /* Collapsible fieldsets */
 fieldset.collapsible {
@@ -287,17 +287,17 @@ fieldset:not(.collapsible) .form-item, fieldset, #user-profile-form--2 .form-ite
 fieldset:not(.collapsible) .panel-heading {
   padding: 0 !important; }
 
-fieldset:not(.collapsible) .panel-title {
-  position: absolute;
-  top: -27px;
-  margin-left: -15px;
-  margin-bottom: 4px; }
-
 fieldset:not(.collapsible) .panel-body {
   padding: 0; }
 
 fieldset:not(.collapsible) button {
   margin-bottom: 15px; }
+
+fieldset:not(.collapsible) .panel-title {
+  position: absolute;
+  top: -20px;
+  margin: 0 0 0 -smallPadding !important;
+  padding: 0 !important; }
 
 /* Nested fieldsets */
 fieldset:not(.collapsible) fieldset {
@@ -1438,7 +1438,7 @@ ul.bef-tree-child {
   top: -34px; }
 
 .node-form fieldset.panel {
-  margin: 10px 10px 30px 10px !important; }
+  margin: 10px 10px 50px 10px !important; }
 
 /* Media */
 .page-node-edit.node-type-media .group-basic-info, .page-node-add-media .group-basic-info {
@@ -1711,11 +1711,13 @@ ul.bef-tree-child {
 .help-block.password-help {
   width: 100%;
   position: relative;
-  color: white;
   border: none;
   left: 0;
   margin: 0 15px;
   padding: 15px 0 0 0; }
+
+#user-register-form .help-block.password-help {
+  color: white; }
 
 #user-register-form .form-required {
   display: none; }
@@ -1749,15 +1751,19 @@ ul.bef-tree-child {
   display: none; }
 
 /* User edit/profile form */
-.page-user-edit .panel-pane {
-  display: inline-block;
-  width: 45%;
-  vertical-align: top; }
+.page-user-edit .region-content .bootstrap-twocol-stacked > .row {
+  margin: 0 !important; }
 
-.page-user-edit .form-type-password {
-  display: inline-block;
-  clear: none;
-  width: 50%; }
+.page-user-edit .panel-pane {
+  display: block;
+  width: 100%;
+  clear: both; }
+
+.page-user-edit .panel-separator {
+  height: 100px; }
+
+.page-user-edit #edit-submit, .page-user-edit #edit-submit--3 {
+  float: right; }
 
 .page-user-edit #edit-picture--3 {
   border: none !important;
@@ -1772,7 +1778,13 @@ ul.bef-tree-child {
   vertical-align: top;
   position: relative; }
 
+.page-user-edit .form-item-current-pass {
+  width: 100%; }
+
 .page-user-edit .tabbable {
+  display: none; }
+
+.page-user-edit .form-item-title {
   display: none; }
 
 .form-type-file, .page-user-edit #edit-picture--3 .form-type-file {
@@ -2077,6 +2089,6 @@ ul.bef-tree-child {
     position: relative;
     height: 45vh; } }
 body.front .breadcrumb, #block-views-exp-find-content-page {
-  margin-top: 35px; }
+  margin-top: 75px; }
 
 /*# sourceMappingURL=style.css.map */
